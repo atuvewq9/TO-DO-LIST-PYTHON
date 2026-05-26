@@ -1,5 +1,5 @@
 
-# Online Python - IDE, Editor, Compiler, Interpreter
+
 tasks = []
 
 while True:
@@ -11,8 +11,7 @@ while True:
     print("4. Exit")
 
     choice = input("Enter choice: ")
-
-    # ADD TASK
+ 
     if choice == "1":
 
         task = input("Enter task: ")
@@ -20,7 +19,6 @@ while True:
 
         print("Task added!")
 
-    # VIEW TASKS
     elif choice == "2":
 
         if len(tasks) == 0:
@@ -32,7 +30,6 @@ while True:
             for i, task in enumerate(tasks, start=1):
                 print(i, task)
 
-    # DELETE TASK
     elif choice == "3":
 
         if len(tasks) == 0:
@@ -53,7 +50,6 @@ while True:
             else:
                 print("Invalid task number.")
 
-    # EXIT
     elif choice == "4":
 
         print("Goodbye!")
